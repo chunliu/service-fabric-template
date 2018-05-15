@@ -121,20 +121,6 @@
             "type": "string",
             "defaultValue": "latest"
         },
-        "loadBalancedAppPort1": {
-            "type": "int",
-            "defaultValue": 80,
-            "metadata": {
-                "description": "Input endpoint1 for the application to use. Replace it with what your application uses"
-            }
-        },
-        "loadBalancedAppPort2": {
-            "type": "int",
-            "defaultValue": 443,
-            "metadata": {
-                "description": "Input endpoint2 for the application to use. Replace it with what your application uses"
-            }
-        },
         "clusterProtectionLevel": {
             "type": "string",
             "allowedValues": [
@@ -393,44 +379,6 @@
                             },
                             "protocol": "tcp"
                         }
-                    },
-                    {
-                        "name": "AppPortLBRule1",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[variables('lbPoolID0')]"
-                            },
-                            "backendPort": "[parameters('loadBalancedAppPort1')]",
-                            "enableFloatingIP": "false",
-                            "frontendIPConfiguration": {
-                                "id": "[variables('lbIPConfig0')]"
-                            },
-                            "frontendPort": "[parameters('loadBalancedAppPort1')]",
-                            "idleTimeoutInMinutes": "5",
-                            "probe": {
-                                "id": "[concat(variables('lbID0'),'/probes/AppPortProbe1')]"
-                            },
-                            "protocol": "tcp"
-                        }
-                    },
-                    {
-                        "name": "AppPortLBRule2",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[variables('lbPoolID0')]"
-                            },
-                            "backendPort": "[parameters('loadBalancedAppPort2')]",
-                            "enableFloatingIP": "false",
-                            "frontendIPConfiguration": {
-                                "id": "[variables('lbIPConfig0')]"
-                            },
-                            "frontendPort": "[parameters('loadBalancedAppPort2')]",
-                            "idleTimeoutInMinutes": "5",
-                            "probe": {
-                                "id": "[concat(variables('lbID0'),'/probes/AppPortProbe2')]"
-                            },
-                            "protocol": "tcp"
-                        }
                     }
                 ],
                 "probes": [
@@ -449,24 +397,6 @@
                             "intervalInSeconds": 5,
                             "numberOfProbes": 2,
                             "port": "[parameters('nt0fabricHttpGatewayPort')]",
-                            "protocol": "tcp"
-                        }
-                    },
-                    {
-                        "name": "AppPortProbe1",
-                        "properties": {
-                            "intervalInSeconds": 5,
-                            "numberOfProbes": 2,
-                            "port": "[parameters('loadBalancedAppPort1')]",
-                            "protocol": "tcp"
-                        }
-                    },
-                    {
-                        "name": "AppPortProbe2",
-                        "properties": {
-                            "intervalInSeconds": 5,
-                            "numberOfProbes": 2,
-                            "port": "[parameters('loadBalancedAppPort2')]",
                             "protocol": "tcp"
                         }
                     }

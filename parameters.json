@@ -3,43 +3,43 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "clusterName": {
-            "value": null
+            "value": "clsfcluster1"
         },
         "clusterLocation": {
-            "value": null
+            "value": "southeastasia"
         },
         "computeLocation": {
-            "value": null
+            "value": "southeastasia"
         },
         "adminUserName": {
-            "value": null
+            "value": "sfadmin"
         },
         "adminPassword": {
             "value": null
         },
         "nicName": {
-            "value": null
+            "value": "NIC-clsfcluster1"
         },
         "publicIPAddressName": {
-            "value": null
+            "value": "clsfcluster1-PubIP"
         },
         "dnsName": {
-            "value": null
+            "value": "clsfcluster2"
         },
         "virtualNetworkName": {
-            "value": null
+            "value": "VNet-clsfcluster1"
         },
         "lbName": {
-            "value": null
+            "value": "LB-clsfcluster1"
         },
         "lbIPName": {
-            "value": null
+            "value": "LBIP-clsfcluster1"
         },
         "applicationDiagnosticsStorageAccountName": {
-            "value": null
+            "value": "sfdgclsfcluster25342"
         },
         "supportLogStorageAccountName": {
-            "value": null
+            "value": "sflogsclsfcluster29620"
         },
         "sourceVaultValue": {
             "value": null
@@ -51,7 +51,7 @@
             "value": null
         },
         "vmImageSku": {
-            "value": "Datacenter-Core-1803-with-Containers-smalldisk"
+            "value": "Datacenter-Core-1709-with-Containers-smalldisk"
         },
         "vmImageOffer": {
             "value": "WindowsServerSemiAnnual"
