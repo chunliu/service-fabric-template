@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": "clsfcluster1"
+        },
+        "clusterLocation": {
+            "value": "southeastasia"
+        },
+        "computeLocation": {
+            "value": "southeastasia"
+        },
+        "adminUserName": {
+            "value": "sfadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "nicName": {
+            "value": "NIC-clsfcluster1"
+        },
+        "publicIPAddressName": {
+            "value": "clsfcluster1-PubIP"
+        },
+        "dnsName": {
+            "value": "clsfcluster1"
+        },
+        "virtualNetworkName": {
+            "value": "VNet-clsfcluster1"
+        },
+        "lbName": {
+            "value": "LB-clsfcluster1"
+        },
+        "lbIPName": {
+            "value": "LBIP-clsfcluster1"
+        },
+        "applicationDiagnosticsStorageAccountName": {
+            "value": "sfdgclsfcluster13173"
+        },
+        "supportLogStorageAccountName": {
+            "value": "sflogsclsfcluster12108"
+        },
+        "sourceVaultValue": {
+            "value": "/subscriptions/b31da45e-98ee-4988-ab63-451b2f178c90/resourcegroups/clsfclusterrg/providers/Microsoft.KeyVault/vaults/clsfkeyvault"
+        },
+        "certificateUrlValue": {
+            "value": "https://clsfkeyvault.vault.azure.net/secrets/clsfcluster1/7f8c6170718841bdaaf684cc39028bb2"
+        },
+        "certificateThumbprint": {
+            "value": "99A13BA51BB42531882F235CFDF0960177B488BF"
+        },
+        "vmImageSku": {
+            "value": "Datacenter-Core-1709-with-Containers-smalldisk"
+        },
+        "vmImageOffer": {
+            "value": "WindowsServerSemiAnnual"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        }
+    }
+}
