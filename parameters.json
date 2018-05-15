@@ -3,52 +3,52 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "clusterName": {
-            "value": "clsfcluster1"
+            "value": null
         },
         "clusterLocation": {
-            "value": "southeastasia"
+            "value": null
         },
         "computeLocation": {
-            "value": "southeastasia"
+            "value": null
         },
         "adminUserName": {
-            "value": "sfadmin"
+            "value": null
         },
         "adminPassword": {
             "value": null
         },
         "nicName": {
-            "value": "NIC-clsfcluster1"
+            "value": null
         },
         "publicIPAddressName": {
-            "value": "clsfcluster1-PubIP"
+            "value": null
         },
         "dnsName": {
-            "value": "clsfcluster1"
+            "value": null
         },
         "virtualNetworkName": {
-            "value": "VNet-clsfcluster1"
+            "value": null
         },
         "lbName": {
-            "value": "LB-clsfcluster1"
+            "value": null
         },
         "lbIPName": {
-            "value": "LBIP-clsfcluster1"
+            "value": null
         },
         "applicationDiagnosticsStorageAccountName": {
-            "value": "sfdgclsfcluster13173"
+            "value": null
         },
         "supportLogStorageAccountName": {
-            "value": "sflogsclsfcluster12108"
+            "value": null
         },
         "sourceVaultValue": {
-            "value": "/subscriptions/b31da45e-98ee-4988-ab63-451b2f178c90/resourcegroups/clsfclusterrg/providers/Microsoft.KeyVault/vaults/clsfkeyvault"
+            "value": null
         },
         "certificateUrlValue": {
-            "value": "https://clsfkeyvault.vault.azure.net/secrets/clsfcluster1/7f8c6170718841bdaaf684cc39028bb2"
+            "value": null
         },
         "certificateThumbprint": {
-            "value": "99A13BA51BB42531882F235CFDF0960177B488BF"
+            "value": null
         },
         "vmImageSku": {
             "value": "Datacenter-Core-1803-with-Containers-smalldisk"
