@@ -51,7 +51,7 @@
             "value": "99A13BA51BB42531882F235CFDF0960177B488BF"
         },
         "vmImageSku": {
-            "value": "Datacenter-Core-1709-with-Containers-smalldisk"
+            "value": "Datacenter-Core-1803-with-Containers-smalldisk"
         },
         "vmImageOffer": {
             "value": "WindowsServerSemiAnnual"
