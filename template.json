@@ -525,7 +525,7 @@
                                     "autoUpgradeMinorVersion": true,
                                     "settings": {
                                         "fileUris": [
-                                            "https://gist.githubusercontent.com/chunliu/7224068b73cea97bebdce4542c08c042/raw/a69dd63cacc16e1dc46b42cde004fb0ae30c31af/config-lcow.ps1"
+                                            "https://gist.githubusercontent.com/chunliu/8b3c495f7ff0289c19d7d359d9e14f0d/raw/15fd112bcdcdeb971f00921e415e9f793e2ed6a5/config-docker.ps1"
                                         ],
                                         "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File config-docker.ps1"
                                     }
